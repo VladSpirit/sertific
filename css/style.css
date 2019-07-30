@@ -1,0 +1,513 @@
+@font-face {
+	font-family: 'Geometria Regular';
+	src: url('../fonts/Geometria.eot');
+	src: url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Geometria.woff') format('woff'),
+	url('../fonts/Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria Bold';
+	src: url('../fonts/Geometria-Bold.eot');
+	src: url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Geometria-Bold.woff') format('woff'),
+	url('../fonts/Geometria-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+font-family: 'Geometria Medium';
+src: url('../fonts/Geometria-Medium.eot');
+src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Geometria-Medium.woff') format('woff'),
+url('../fonts/Geometria-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+	font-family: 'Circe Regular';
+	src: url('../fonts/Circe-Regular.eot');
+	src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-Regular.woff') format('woff'),
+	url('../fonts/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe Bold';
+	src: url('../fonts/Circe-Bold.eot');
+	src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-Bold.woff') format('woff'),
+	url('../fonts/Circe-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe Light';
+	src: url('../fonts/Circe-Light.eot');
+	src: url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-Light.woff') format('woff'),
+	url('../fonts/Circe-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+		font-size: 10px;
+		
+}
+body { 
+		margin: 0;
+		padding: 0;
+		font-family: 'Geometria Regular';
+		color: #5F5F5F;
+}
+
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Circe Light';
+	color: #000000;
+}
+
+/*
+* {
+	border: 1px solid blue;
+}*/
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+
+button {
+	cursor: pointer;
+	outline: none;
+	font-family: 'Geometria Medium';
+	font-size: 1.4rem;
+	color: #fff;
+	background: #01B5B4;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+	border:none;
+	border-radius: 100px;
+	padding: 1.5rem;
+	width: 25rem;
+}
+
+.header_title {
+	padding: 0;
+	margin: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	font-family: 'Geometria Bold';
+	font-size: 2.4rem;
+	color: #5F5F5F;
+}
+
+.header_title:before {
+	margin-right: 3.5vh;
+	content: "";
+	display: inline-block;
+	width: 0.4rem;
+	height: 4rem;
+	background-color: #01B5B4;
+}
+/* Header */
+.header {
+	padding-bottom: 25vw;
+	background: url(../images/22.svg) no-repeat left top / cover;
+}
+
+
+
+.menu {	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	padding: 2vh 0;
+	margin: 0 0 0 20%;
+	list-style: none;
+}
+.menu li {
+	text-align: center;
+}
+.menu a {
+	font-family: 'Geometria Regular';
+	font-size: 1.4rem;
+	color: #5F5F5F;;
+	text-decoration: none;
+}
+
+/* About company */
+.about_company {
+	background: url(../images/people_city.svg) no-repeat left;
+	background-color: rgba(0,0,0,0);
+
+}
+.about_company_inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	align-items: flex-end;
+
+
+
+}
+.about_company_inner .header_title {
+	margin-right: 36.3%;
+
+
+}
+
+.about_company_p {
+		font-size: 1.6rem;
+		width: 52%;
+
+}
+.btn_more {
+	margin-right: 30.5%;
+	margin-bottom: 12vh;
+}
+
+
+.about_company_p {
+	margin-top: 4vh;
+	margin-bottom: 7.5vh;
+	font-family: 'Circe Light';
+}
+
+.separating_line {
+
+		z-index: 999;
+		width: 100%;
+		height: 6vh;
+		background: #232323;
+}
+
+/* Specialization */
+
+.specialization_text {
+	width: 50%;
+	padding-top: 4vh;
+}
+.specialization_text_p {
+	font-size: 1.6rem;
+	padding-top: 3vh;
+}
+.our_specialization {
+	padding-top: 8vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.item_specialization {
+	padding: 0 1% 0 1%;
+	font-size: 1.6rem;
+	padding-bottom: 3vh;
+	margin-bottom: 8vh;
+	border: 1px solid rgba(1, 181, 180, 0.32);
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 31%;
+	text-align: center;
+}
+.item_specialization img {
+	margin-top: -5vh;
+}
+
+.item_specialization_p {
+	font-family: 'Circe Bold';
+	font-size: 2.4rem;
+
+	color: #01B5B4;
+}
+/* Services */
+
+.services {
+	background: #232323;
+}
+
+.our_services {
+	width: 60%;
+}
+.header_title_services {
+
+	color: #01B5B4;
+}
+.our_services_des {
+	padding-top: 3.5vh;
+	padding-bottom: 6vh;
+	font-family: 'Circe Regular';
+	font-size: 1.6rem;
+	color: #BEBEBE;
+}
+.services_inner {
+	padding-top: 3.5vh;
+	padding-bottom: 8vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+
+}
+.our_merits {
+	height: 25rem;
+	justify-content: space-between;
+	margin-right: 30%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 40%;
+
+}
+.item_merits {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.text_merits {
+	font-family: 'Circe Regular';
+	font-size: 1.8rem;
+	color: #FFFFFF;
+	padding-left: 7%;
+}
+
+
+/* Last news */
+.last_news_header {
+	padding-top: 4vh;
+}
+.news_blocks {
+	padding-top: 3vh;
+	justify-content: space-between;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.last_news_header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.other_item_news {
+	position: relative;
+}
+.other_item_news a {
+	padding-right: 3%;
+	position: absolute;
+	right: 0;
+	bottom: 4%;
+}
+.main_news img,
+.other_item_news img {
+	width: 100%;
+	height: auto;
+}
+.main_news {
+	height: 100%;
+	border: 1px solid #D7D7D7;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 63.7%;
+
+}
+
+.time_news {
+
+	font-family: 'Circe Bold';
+	font-size: 1.4rem;
+	color: #888888;
+}
+
+.main_news_header {
+	padding-top: 1vh;
+	font-family: 'Circe Bold';
+	font-size: 1.8rem;
+	color: #000;
+
+}
+.main_news_header:after {
+	margin-top: 1rem;
+	content: "";
+	display: block;
+	width: 25rem;
+	height: 0;
+	border: 1px solid #01B5B4;
+}
+.main_news_des {
+	padding-top: 1.5vh;
+	font-size: 1.6rem;
+	color: #000;
+	padding-bottom: 1.5vh;
+
+}
+
+.main_news a,
+.other_item_news a {
+	text-decoration: none;
+	font-family: 'Circe Bold';
+	font-size: 1.6rem;
+	color: #01B5B4;
+}
+.other_news {
+	width: 34.5%;
+}
+.other_item_news {
+	border: 1px solid #D7D7D7;
+	height: 48.5%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	
+}
+
+.other_news_p {
+	margin: 0;
+	font-family: 'Circe Regular';
+	font-size: 1.6rem;
+	color: #000000;
+}
+.other_item_news {
+	margin-bottom: 4.5%;
+
+}
+
+.news_text {
+	padding: 2%;
+}
+/* Our partners */
+.our_partners {
+	padding-top: 4vh;
+
+}
+.our_partners img {
+	padding-top: 3vh;
+	padding-bottom: 7vh;
+}
+.logo_partners {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Footer */
+footer {
+		background: #232323;
+}
+.footer {
+	
+	justify-content: space-between;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.menu2 {
+	width: 60%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+.menu2 li {
+	padding-top: 1.5vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: center;
+}
+footer .menu2 a {
+
+	font-size: 1.4rem;
+	color: #fff;
+	text-decoration: none;
+}
+.contact_information {
+	padding: 1.5% 0 1.5% 0;
+	height: 23vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: right;
+}
+.contact_information p {
+	font-family: 'Geometria Regular';
+	font-size: 1.4rem;
+	color: #fff;
+}
+.soc_networks {
+	align-self: flex-end;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 50%;
+}
